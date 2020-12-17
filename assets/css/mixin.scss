@@ -1,0 +1,162 @@
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-center-align-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin loader {
+  display: none;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: 2rem;
+}
+@mixin background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@mixin title {
+  color: $title-gray;
+  font-size: 19px;
+  letter-spacing: 0.865px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+@mixin fa-chevron-down {
+  color: $red;
+  font-size: 9px;
+  font-weight: 600;
+  border: 1px solid $dark-gray;
+  border-radius: 50%;
+  padding: 3px;
+  margin-right: 0.5rem;
+}
+@mixin overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #fff;
+}
+
+@mixin pre-arrow {
+  color:rgb(0,0,0);
+  position: absolute;
+  top: 35%;
+  left: 1rem;
+  font-size: 24px;
+  background-color: #fff;
+  padding: 15px 10px;
+  transition: all 0.2s ease-in;
+}
+@mixin next-arrow {
+  color: rgb(0,0,0);
+  position: absolute;
+  top: 35%;
+  right: 1rem;
+  font-size: 24px;
+  background-color: #fff;
+  padding: 15px 10px;
+  transition: all 0.2s ease-in;
+}
+
+@mixin input {
+  width: 90%;
+  padding: 12px 10px;
+  background-color: rgb(245, 247, 250);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@mixin placeholder {
+  text-transform: uppercase;
+  color: $black;
+  font-size: 12px;
+  font-weight: 200;
+}
+@mixin label {
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 15px;
+}
+@mixin submit-btn {
+  background: $loader-color;
+  padding: 9px 25px;
+  color: $white;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+}
+@mixin input-submit {
+  background-color: $black;
+  color:$white;
+  font-size: 0.875rem;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  object-fit: none;
+  padding: 6px 12px;
+  width: 20%;
+  transition: background-color 0.2s ease-in-out;
+}
+@mixin popup-block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  z-index: 500;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@mixin logo {
+  width: 250px;
+  min-height: 120px;
+  max-height: 120px;
+  position: absolute;
+  top: 24vh;
+  left: -8vw;
+  right: 0px; 
+}
