@@ -205,7 +205,7 @@ function handleContactForm () {
     },
     messages: {
       first_name: "Please enter a first name",
-      last_name: "Please enter your last name",
+      last_name: "Please enter a last name",
       email: "Please enter a valid email address",
       phone: "Please enter a valid phone"
     },
